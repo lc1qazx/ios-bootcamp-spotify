@@ -2,8 +2,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isLiked = false
-    @State private var progress = 83.0
-    let duration = 234.0
+    @State private var progress = 18.0
+    let duration = 79.0
     let green = Color(red: 0.12, green: 0.84, blue: 0.39)
 
     var body: some View {
@@ -18,9 +18,9 @@ struct ContentView: View {
                         Image(systemName: "chevron.down")
                         Spacer()
                         VStack(spacing: 4) {
-                            Text("PLAYING FROM PLAYLIST")
+                            Text("PLAYING FROM ALBUM")
                                 .font(.caption2)
-                            Text("After Hours")
+                            Text("The 1975")
                                 .font(.subheadline.bold())
                         }
                         Spacer()
