@@ -20,8 +20,12 @@ This is a UI practice app; it does not play audio.
 - `PlaybackControlsView.swift`: buttons and state.
 - `AlbumArtworkView.swift`: the cover.
 
-Built with SwiftUI. iOS and Mac builds pass. iPhone simulator checks are waiting for the runtime download.
+Built with SwiftUI. iOS and Mac builds pass. Also launched and checked on an iPhone 17 simulator running iOS 27.
 
 The initial draft was made with help from Codex and will be revised.
 
 [Project 1 instructions](https://appteamcarolina.notion.site/Project-1-9d6c96c1ce73835bbe00814a83ee1c27)
+
+## Screenshot
+
+![iPhone simulator screenshot](screenshots/spotify-iphone.png)
