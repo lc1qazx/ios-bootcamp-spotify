@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    // State 是这个页面拥有的数据；修改它时，SwiftUI 会重新绘制相关界面。
+    // State belongs to this view. Changing it updates the related UI.
     @State private var isPlaying = false
     @State private var isLiked = false
     @State private var isShuffling = false
@@ -24,7 +24,7 @@ struct ContentView: View {
                         .aspectRatio(1, contentMode: .fit)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                         .shadow(color: .black.opacity(0.30), radius: 24, y: 14)
-                        .accessibilityLabel("Night Drive 的原创几何专辑封面")
+                        .accessibilityLabel("Original geometric cover for Night Drive")
 
                     HStack(spacing: 18) {
                         VStack(alignment: .leading, spacing: 7) {
@@ -40,13 +40,13 @@ struct ContentView: View {
                                 .foregroundStyle(isLiked ? green : .white.opacity(0.8))
                                 .frame(width: 44, height: 44)
                         }
-                        .accessibilityLabel(isLiked ? "取消收藏" : "收藏歌曲")
+                        .accessibilityLabel(isLiked ? "Remove from favorites" : "Add to favorites")
                     }
 
                     VStack(spacing: 0) {
                         Slider(value: $progress, in: 0...duration)
                             .tint(.white)
-                            .accessibilityLabel("播放进度")
+                            .accessibilityLabel("Playback progress")
                         HStack {
                             Text(timeLabel(progress))
                             Spacer()
@@ -70,7 +70,7 @@ struct ContentView: View {
                             Image(systemName: "text.alignleft")
                                 .font(.title3).frame(width: 44, height: 44)
                         }
-                        .accessibilityLabel(showLyrics ? "收起歌曲说明" : "展开歌曲说明")
+                        .accessibilityLabel(showLyrics ? "Hide track information" : "Show track information")
                     }
 
                     if showLyrics {
@@ -110,7 +110,7 @@ struct ContentView: View {
             } label: {
                 Image(systemName: "ellipsis").font(.title3).frame(width: 32, height: 44)
             }
-            .accessibilityLabel("歌曲选项")
+            .accessibilityLabel("Track options")
         }
         .foregroundStyle(.white)
     }

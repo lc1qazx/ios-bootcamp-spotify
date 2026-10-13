@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// 纯 SwiftUI 绘制的封面，换成自己的照片时可用 Image("你的资源名") 替换。
+/// A SwiftUI cover. Replace this view with Image("YourAsset") to use your own picture.
 struct AlbumArtworkView: View {
     var body: some View {
         GeometryReader { geometry in
@@ -13,7 +13,7 @@ struct AlbumArtworkView: View {
                     .frame(width: geometry.size.width * 0.42)
                     .offset(x: geometry.size.width * 0.16, y: -geometry.size.height * 0.03)
                 Canvas { context, size in
-                    // 同一条曲线重复绘制，形成夜间道路的几何纹理。
+                    // Repeat a curve to create a road-like pattern.
                     for index in 0..<22 {
                         let fraction = CGFloat(index) / 21
                         var path = Path()

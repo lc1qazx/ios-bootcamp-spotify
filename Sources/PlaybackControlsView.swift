@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PlaybackControlsView: View {
-    // Binding 让子视图读写父视图的 State，而不是另建一份不相关的数据。
+    // Binding lets this child view change the parent view's state.
     @Binding var isPlaying: Bool
     @Binding var isShuffling: Bool
     @Binding var isRepeating: Bool
@@ -16,12 +16,12 @@ struct PlaybackControlsView: View {
                     .foregroundStyle(isShuffling ? green : .white.opacity(0.7))
                     .frame(width: 44, height: 48)
             }
-            .accessibilityLabel(isShuffling ? "关闭随机播放" : "开启随机播放")
+            .accessibilityLabel(isShuffling ? "Turn shuffle off" : "Turn shuffle on")
             Spacer(minLength: 8)
             Button(action: previous) {
                 Image(systemName: "backward.end.fill").font(.title2).frame(width: 44, height: 48)
             }
-            .accessibilityLabel("回到开头")
+            .accessibilityLabel("Back to start")
             Spacer(minLength: 8)
             Button { isPlaying.toggle() } label: {
                 Image(systemName: isPlaying ? "pause.fill" : "play.fill")
@@ -31,19 +31,19 @@ struct PlaybackControlsView: View {
                     .frame(width: 68, height: 68)
                     .background(.white, in: Circle())
             }
-            .accessibilityLabel(isPlaying ? "暂停预览" : "播放预览")
+            .accessibilityLabel(isPlaying ? "Pause preview" : "Play preview")
             Spacer(minLength: 8)
             Button(action: next) {
                 Image(systemName: "forward.end.fill").font(.title2).frame(width: 44, height: 48)
             }
-            .accessibilityLabel("跳到结尾")
+            .accessibilityLabel("Skip to end")
             Spacer(minLength: 8)
             Button { isRepeating.toggle() } label: {
                 Image(systemName: "repeat")
                     .foregroundStyle(isRepeating ? green : .white.opacity(0.7))
                     .frame(width: 44, height: 48)
             }
-            .accessibilityLabel(isRepeating ? "关闭循环播放" : "开启循环播放")
+            .accessibilityLabel(isRepeating ? "Turn repeat off" : "Turn repeat on")
         }
         .font(.title3)
         .foregroundStyle(.white)

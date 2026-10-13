@@ -1,27 +1,27 @@
-# 音乐播放器练习
+# Music Player Practice
 
-iOS Bootcamp Project 1 的初稿，界面参考 Spotify。先把基础界面做出来，后面继续修改。
+A first draft for iOS Bootcamp Project 1, inspired by Spotify. I will keep learning and updating it.
 
-## 怎么运行
+## Run
 
-用 Xcode 打开 `SpotifyPlayer.xcodeproj`，选择 `SpotifyPlayer` 和一个 iPhone 模拟器，点击 ▶。模拟器还没下载好时，可以选择 `My Mac (Mac Catalyst)` 先看界面。
+Open `SpotifyPlayer.xcodeproj` in Xcode. Choose the `SpotifyPlayer` scheme and an iPhone simulator, then press Run. You can also use `My Mac (Mac Catalyst)` for a desktop preview.
 
-## 现在有什么
+## In this draft
 
-- 专辑封面、歌名、歌手、播放进度。
-- 播放 / 暂停、收藏、随机和循环按钮的状态切换。
-- 拖动进度条会改变时间显示。
+- Album cover, song details, and a progress slider.
+- Play/pause, favorite, shuffle, and repeat state changes.
+- Time labels that update when the slider moves.
 
-目前是界面练习，不播放真正的音乐。
+This is a UI practice app; it does not play audio.
 
-## 后面从哪里改
+## Where to edit
 
-- `ContentView.swift`：歌名、背景、布局、间距。
-- `PlaybackControlsView.swift`：播放按钮和状态。
-- `AlbumArtworkView.swift`：封面。
+- `ContentView.swift`: song details, background, and spacing.
+- `PlaybackControlsView.swift`: buttons and state.
+- `AlbumArtworkView.swift`: the cover.
 
-使用 SwiftUI，iOS / Mac 构建已通过；iPhone 模拟器检查还在等待运行环境下载。
+Built with SwiftUI. iOS and Mac builds pass. iPhone simulator checks are waiting for the runtime download.
 
-初稿使用 Codex 协助，后续会继续学习和修改。
+The initial draft was made with help from Codex and will be revised.
 
-[Project 1 说明](https://appteamcarolina.notion.site/Project-1-9d6c96c1ce73835bbe00814a83ee1c27)
+[Project 1 instructions](https://appteamcarolina.notion.site/Project-1-9d6c96c1ce73835bbe00814a83ee1c27)
