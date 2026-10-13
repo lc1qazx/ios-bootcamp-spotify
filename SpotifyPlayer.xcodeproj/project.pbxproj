@@ -2,6 +2,8 @@
 {
  archiveVersion = 1; classes = {}; objectVersion = 56;
  objects = {
+3BB45342CEB7B862BC2BCA95 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+BDDD29F629CD0596C253CCCE = {isa = PBXBuildFile; fileRef = 3BB45342CEB7B862BC2BCA95; };
 7E785D68EF840020939BD31E = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtworkView.swift; sourceTree = "<group>"; };
 C415A0D742A87EC3E90967CB = {isa = PBXBuildFile; fileRef = 7E785D68EF840020939BD31E; };
 41B8DC2772942F4E09877D1A = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -11,12 +13,12 @@ D2FB57C06652BBBDE66DB07B = {isa = PBXFileReference; lastKnownFileType = sourceco
 89CE69A8975C47E939CB6D6F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayerApp.swift; sourceTree = "<group>"; };
 9B1386A09BCF36D8A80E4845 = {isa = PBXBuildFile; fileRef = 89CE69A8975C47E939CB6D6F; };
 DDE052795E2614499288F1E3 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-ED63B8B76B80E167131B44FD = {isa = PBXGroup; children = (B56B29D9CA993E4011D7D4AA, A131C6F9AA98D083EBEA9581,); sourceTree = "<group>"; };
+ED63B8B76B80E167131B44FD = {isa = PBXGroup; children = (3BB45342CEB7B862BC2BCA95, B56B29D9CA993E4011D7D4AA, A131C6F9AA98D083EBEA9581,); sourceTree = "<group>"; };
 B56B29D9CA993E4011D7D4AA = {isa = PBXGroup; children = (7E785D68EF840020939BD31E, 41B8DC2772942F4E09877D1A, D2FB57C06652BBBDE66DB07B, 89CE69A8975C47E939CB6D6F,); path = Sources; sourceTree = "<group>"; };
 A131C6F9AA98D083EBEA9581 = {isa = PBXGroup; children = (DDE052795E2614499288F1E3,); name = Products; sourceTree = "<group>"; };
 068868CED901CA3C58460BFC = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C415A0D742A87EC3E90967CB, 1820E4F0119A1ADE7E70FCF3, 25E80473D8C1A881649B139F, 9B1386A09BCF36D8A80E4845,); runOnlyForDeploymentPostprocessing = 0; };
 C5E78BA518149B3E74F25B41 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-9BC74E371469DDA195B08B75 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+9BC74E371469DDA195B08B75 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (BDDD29F629CD0596C253CCCE,); runOnlyForDeploymentPostprocessing = 0; };
 EE07994939B72980D7D03089 = {isa = PBXNativeTarget; buildConfigurationList = 2EFDE2FF0F7EB8BCB511DA62; buildPhases = (068868CED901CA3C58460BFC, C5E78BA518149B3E74F25B41, 9BC74E371469DDA195B08B75,); buildRules = (); dependencies = (); name = SpotifyPlayer; productName = SpotifyPlayer; productReference = DDE052795E2614499288F1E3; productType = "com.apple.product-type.application"; };
 C1CE2F76244A572F77EAF42F = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 2700; }; buildConfigurationList = 9DE58E695B49A0E83FD4CD23; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base,); mainGroup = ED63B8B76B80E167131B44FD; productRefGroup = A131C6F9AA98D083EBEA9581; projectDirPath = ""; projectRoot = ""; targets = (EE07994939B72980D7D03089,); };
 D34E04414ACBCAAC0315FDB5 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf;}; name = Debug; };
@@ -24,7 +26,8 @@ D34E04414ACBCAAC0315FDB5 = {isa = XCBuildConfiguration; buildSettings = {CLANG_E
             CURRENT_PROJECT_VERSION = 1;
             MARKETING_VERSION = 0.1.0;
             GENERATE_INFOPLIST_FILE = YES;
-            INFOPLIST_KEY_CFBundleDisplayName = "After Hours";
+            ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+            INFOPLIST_KEY_CFBundleDisplayName = "Music Player";
             INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
             INFOPLIST_KEY_UILaunchScreen_Generation = YES;
             INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -42,7 +45,8 @@ BB4847B0B21C9438A741EA6D = {isa = XCBuildConfiguration; buildSettings = {CODE_SI
             CURRENT_PROJECT_VERSION = 1;
             MARKETING_VERSION = 0.1.0;
             GENERATE_INFOPLIST_FILE = YES;
-            INFOPLIST_KEY_CFBundleDisplayName = "After Hours";
+            ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+            INFOPLIST_KEY_CFBundleDisplayName = "Music Player";
             INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
             INFOPLIST_KEY_UILaunchScreen_Generation = YES;
             INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
